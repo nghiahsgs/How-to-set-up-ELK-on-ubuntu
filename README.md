@@ -29,3 +29,39 @@ test elasticsearch
 sudo service elasticsearch status
 curl localhost:9200
 ```
+
+## Installing Logstash
+install java
+```
+sudo apt-get install default-jre
+```
+
+```
+java -version
+```
+
+```
+sudo apt-get install logstash
+```
+
+## Installing Kibana
+```
+sudo apt-get install kibana
+```
+
+config kibana
+```
+vi /etc/kibana/kibana.yml
+server.port: 5601 
+elasticsearch.hosts: ["http://localhost:9200"]
+```
+
+start Kibana
+```
+sudo service kibana start
+```
+
+Open chrome and go to this url
+```
+http://localhost:5601
+```
