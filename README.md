@@ -65,3 +65,20 @@ Open chrome and go to this url
 ```
 http://localhost:5601
 ```
+
+
+## Installing Beats
+### Installing Beats
+```
+sudo apt-get install metricbeat
+```
+
+### start Metricbeat
+```
+sudo service metricbeat start
+```
+
+### check status beat
+```
+sudo service metricbeat status
+```
