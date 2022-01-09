@@ -47,6 +47,11 @@ sudo apt-get install logstash
 ```
 
 ## Installing Kibana
+Disable firewall
+```
+sudo ufw disable
+```
+
 ```
 sudo apt-get install kibana
 ```
@@ -54,7 +59,10 @@ sudo apt-get install kibana
 config kibana
 ```
 vi /etc/kibana/kibana.yml
-server.host: "localhost"
+```
+
+```
+server.host: "0.0.0.0"
 server.port: 5601 
 elasticsearch.hosts: ["http://localhost:9200"]
 ```
@@ -67,6 +75,7 @@ sudo service kibana start
 Open chrome and go to this url
 ```
 curl localhost:5601
+http://ip_vps:5601
 ```
 
 
