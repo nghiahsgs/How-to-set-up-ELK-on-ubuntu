@@ -54,6 +54,7 @@ sudo apt-get install kibana
 config kibana
 ```
 vi /etc/kibana/kibana.yml
+server.host: "localhost"
 server.port: 5601 
 elasticsearch.hosts: ["http://localhost:9200"]
 ```
