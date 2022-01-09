@@ -27,6 +27,7 @@ cluster.initial_master_nodes: ["<PrivateIP"]
 
 test elasticsearch
 ```
+sudo service elasticsearch start
 sudo service elasticsearch status
 curl localhost:9200
 ```
