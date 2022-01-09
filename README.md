@@ -66,7 +66,7 @@ sudo service kibana start
 
 Open chrome and go to this url
 ```
-http://localhost:5601
+curl localhost:5601
 ```
 
 
